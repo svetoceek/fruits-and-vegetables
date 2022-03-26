@@ -1,0 +1,999 @@
+// Vars
+
+$black: #2a2a2a;
+$green: #7fad39;
+$lightgrey: #999999;
+$white: #fff;
+$lightgreen: #D8E6C3;
+
+// End Vars
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+.container {
+  width: 80%;
+  max-width: 832px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hline {
+  width: 1px;
+  height: 15px;
+  background-color: $lightgrey;
+  margin: 0 16px;
+}
+
+.hline.unactive {
+  visibility: hidden;
+}
+
+// Hinfo
+.hinfo {
+  background-color: $black;
+
+  .inside-hinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    padding: 15px 0;
+    font-size: 10px;
+
+    .hinfo_icon {
+      color: $white;
+    }
+    .hinfo-icon {
+      color: $white;
+      display: flex;
+
+      .social_link {
+        cursor: pointer;
+        margin: 0 10px;
+        font-size: 18px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .hinfo-email {
+      display: flex;
+      align-items: center;
+
+      .hinfo_email {
+        color: $white;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+// End Hinfo
+
+// Navbar Top
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        .navbar-left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-logo{
+                width: 95px;
+                height: 25px;
+
+                img{
+                    width: 100%;
+                }
+            }
+            .navbar-left-icon{
+                opacity:50%;
+                padding: 0 15px;
+                cursor: pointer;
+
+                select{
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+            .navbar-inp{
+                position: relative;
+                input{
+                    width: 220px;
+                    height: 25px;
+                    font-size: 12px;
+                    padding-left: 30px;
+                    outline: none;
+                    border: none;
+                    background-color: #F7F7F7;
+                }
+            }
+            .search{
+                font-size: 11px;
+                color: $lightgrey;
+                position: absolute;
+                left: 245px;
+                z-index: 1;
+            }
+        }
+        .navbar-right{
+            display: flex;
+            align-items: center;
+
+            .navbar-right-icon{
+                font-size: 13px;
+                color: $black;
+                cursor: pointer;
+            }
+            .navbar-line{
+                width: 1px;
+                height: 20px;
+                margin: 0 10px;
+                background-color:$lightgrey;
+            }
+            .heart{
+                color: $black;
+                position: relative;
+                cursor: pointer;
+            }
+            .three{
+                position: absolute;
+                right: 140px;
+                top: 22px;
+                width: 10px;
+                height: 10px;
+                text-align: center;
+                background: $green;
+                border-radius: 50%;
+                font-size: 8px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .navbar-right-user{
+                cursor: pointer;
+                
+                    select{
+                    border: none;
+                    outline: none;
+                    font-size: 13px;
+                    opacity: 50%;
+                    cursor: pointer;
+                }
+            }
+            .heart:hover{
+                color: $green;
+            }
+            .navbar-right-icon{
+                i:hover{
+                    opacity: 70%;
+                }
+            }
+               
+        }
+    }
+// End Navbar Top
+
+// Navbar Bottom
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .nav_left{
+            display: flex;
+            align-items: center;
+
+        .nav-categories{
+            display: flex;
+            padding: 15px 20px;
+            background-color:#F7F7F7;
+            color: $black;
+            font-size: 13px;
+            cursor: pointer;
+
+            i{
+                margin-right:5px ;
+            }
+        }
+        .nav-center{
+            a{
+                color: $black;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            li{
+                margin: 0 15px;
+            }
+        }
+        .nav-center a:hover{
+            color: $green;
+        }
+      }
+      .nav-right{
+        button{
+            border: none;
+            outline: none;
+            background: $green;
+            color: $white;
+            padding: 10px;
+            cursor: pointer;
+
+            select{
+                border: none;
+                outline: none;
+                color: $white;
+                background: $green;
+                cursor: pointer;
+            }
+        }
+      }
+    }
+// End Navbar Bottom
+
+// Shop Now
+    .background{
+        background-color: #e5e5e5;
+
+        .big-shop-now{
+            display: flex;
+            padding: 20px 0;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        
+
+            .shop-now{
+                width: 350px;
+                height: 220px;
+                padding: 5px;
+                margin: 0 5px;
+                cursor: pointer;
+                background-color: $white;
+
+                .background-img2{
+                    display: flex;
+                    width: 340px;
+                    height: 210px;
+                    background-image: url("/img/Rectangle\ 7\ \(1\).png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .sale{
+                        background-color: $white;
+                        width: 65%;
+                        height: 90px;
+                        padding: 20px;
+                        margin-top: 15px;
+                        color: $green;
+
+                        h5{
+                            color: $black;
+                        }
+                        p{
+                            color: $black;
+                            opacity: 70%;
+                            font-size: 13px;
+                        }
+                    }
+                    .shop-button{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        margin-bottom: 15px;
+
+                        button{
+                            padding: 15px 20px;
+                            background-color: $green;
+                            color: $white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .background-img3{
+                    display: flex;
+                    width: 340px;
+                    height: 210px;
+                    background-image: url("/img/Rectangle\ 7\ \(2\).png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .sale{
+                        background-color: $white;
+                        width: 65%;
+                        height: 90px;
+                        padding: 20px;
+                        margin-top: 15px;
+                        color: $green;
+
+                        h5{
+                            color: $black;
+                        }
+                        p{
+                            color: $black;
+                            opacity: 70%;
+                            font-size: 13px;
+                        }
+                    }
+                    .shop-button{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        margin-bottom: 15px;
+
+                        button{
+                            padding: 15px 20px;
+                            background-color: $green;
+                            color: $white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .background-img4{
+                    display: flex;
+                    width: 340px;
+                    height: 210px;
+                    background-image: url("/img/Rectangle\ 7\ \(3\).png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .sale{
+                        background-color: $white;
+                        width: 65%;
+                        height: 90px;
+                        padding: 20px;
+                        margin-top: 15px;
+                        color: $green;
+
+                        h5{
+                            color: $black;
+                        }
+                        p{
+                            color: $black;
+                            opacity: 70%;
+                            font-size: 13px;
+                        }
+                    }
+                    .shop-button{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        margin-bottom: 15px;
+
+                        button{
+                            padding: 15px 20px;
+                            background-color: $green;
+                            color: $white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .background-img5{
+                    display: flex;
+                    width: 340px;
+                    height: 210px;
+                    background-image: url("/img/Rectangle\ 7\ \(4\).png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                
+                    .sale{
+                        background-color: $white;
+                        width: 65%;
+                        height: 90px;
+                        padding: 20px;
+                        margin-top: 15px;
+                        color: $green;
+
+                        h5{
+                            color: $black;
+                        }
+                        p{
+                            color: $black;
+                            opacity: 70%;
+                            font-size: 13px;
+                        }
+                    }
+                    .shop-button{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        margin-bottom: 15px;
+
+                        button{
+                            padding: 15px 20px;
+                            background-color: $green;
+                            color: $white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .background-img{
+                    display: flex;
+                    width: 340px;
+                    height: 210px;
+                    background-image: url("/img/Rectangle\ 7.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    .sale{
+                        background-color: $white;
+                        width: 65%;
+                        height: 90px;
+                        padding: 20px;
+                        margin-top: 15px;
+                        color: $green;
+
+                        h5{
+                            color: $black;
+                        }
+                        p{
+                            color: $black;
+                            opacity: 70%;
+                            font-size: 13px;
+                        }
+                    }
+                    .shop-button{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        margin-bottom: 15px;
+
+                        button{
+                            padding: 15px 20px;
+                            background-color: $green;
+                            color: $white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .shop-now:hover{
+                background-color: $green;
+                transition: 1s linear;
+            }
+            button:hover{
+                background-color: #191919;
+                opacity: 70%;
+                
+            }
+        
+        }
+        .big-shop-now::-webkit-scrollbar{
+            display: none;
+        }
+        
+    }
+// End Shop Now
+
+
+ // Categories
+.background {
+        .big-categories{
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            .categories{
+                display: flex;
+                //  width: 160px;
+                //  height: 90px ;
+
+            .cat-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 160px;
+                height: 90px;
+                background: $white;
+                cursor: pointer;
+                margin: 0 5px;
+                font-size: 11px;
+                font-weight: 600;
+                color: $black;
+                border: 1px solid rgba(42, 42, 42, 0.15);;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
+
+                img{
+                    width: 30%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+        .inner-text{
+            padding: 30px 0;
+
+            p{
+                color: $green;
+                font-weight:600;
+                margin-bottom: 5px;
+            }
+            h3{
+                font-weight: 700;
+            }
+        }
+        .cat-card:hover{
+            padding: 10px;
+           
+        }
+
+        .big-categories::-webkit-scrollbar{
+            display: none;
+        }
+}
+// End Categories
+
+// Featured Products
+    .background{
+        .big-product{
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+        .products{
+            display: flex;
+            padding-bottom: 40px;
+            
+
+
+            .product-card{
+                display: flex;
+                flex-direction: column;
+                width: 164px;
+                height: 216px;
+                background: $white;
+                padding: 10px;
+                margin: 0 5px;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.06);
+                border: 0.5px solid rgba(42, 42, 42, 0.15);
+
+                .pro-card-top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .pro-button{
+
+                        button{
+                        width: 50px;
+                        height: 20px;
+                        background: $green;
+                        color: $white;
+                        border: none;
+                        outline: none;
+                        font-weight: 600;
+                        font-size: 11px;
+                        }
+                        button:hover{
+                            color: $green;
+                            background-color: $lightgreen;
+                            font-size: 13px;
+                        }
+                    }
+                    .product-icon{
+                        width: 22px;
+                        height: 22px;
+                        background-color: $lightgreen;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+
+                        i{
+                            font-size: 13px;
+                            color: $green;
+                        }
+                    }
+                    .product-icon:hover{
+                        background-color: rgb(250, 76, 76);
+
+                        i:hover{
+                            color: $white;
+                        }
+                    }
+                }
+                .pro-card-center{
+                    text-align: center;
+
+                    img{
+                        width: 70%;
+                    }
+                    p{
+                        opacity: 70%;
+                        font-size: 11px;
+                        margin-bottom: 5px ;
+                    }
+                    h3{
+                        font-size: 11px;
+                        margin-bottom: 5px;
+                    }
+                    h4{
+                        font-size: 14px;
+                        color: $green;
+                        margin-bottom: 10px;
+
+                        span{
+                            color:$black;
+                            opacity: 70%;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+                .pro-card-bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .minus{
+                        width: 20px;
+                        height: 20px;
+                        background: $black;
+                        color: $white;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .plus{
+                        width: 20px;
+                        height: 20px;
+                        background: $black;
+                        color: $white;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .minus:hover{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    .plus:hover{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    .pro-cart{
+                        opacity: 30%;
+                    }
+                    .pro-cart:hover{
+                        color: #999999;
+                    }
+                }
+            }
+        }
+    }
+    .big-product::-webkit-scrollbar{
+        display: none;
+    }
+}
+// End Featured Products
+
+// Best Values
+    .background{
+        .values{
+            display: flex;
+            margin-bottom: 10px;
+
+            .value-card{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 0 0 15px 15px;
+                width: 260px;
+                height: 160px;
+                background-image: url('/img/Rectangle\ 3.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .value-top{
+                    margin-bottom: 10px;
+                    h4{
+                        font-size: 17px;
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+                button{
+                    width: 100px;
+                    height: 30px;
+                    background: $black;
+                    color: $white;
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                }
+            }
+            .value-card2{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 0 0 15px 15px;
+                margin: 0 10px;
+                width: 260px;
+                height: 160px;
+                background-image: url('/img/Rectangle\ 3\ \(1\).png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .value-top{
+                    margin-bottom: 20px;
+                    h4{
+                        font-size: 17px;
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+                button{
+                    width: 100px;
+                    height: 30px;
+                    background: $black;
+                    color: $white;
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                }
+            }
+            .value-card3{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 0 0 15px 15px;
+                width: 260px;
+                height: 160px;
+                background-image: url('/img/Rectangle\ 3\ \(2\).png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .value-top{
+                    margin-bottom: 20px;
+                    h4{
+                        font-size: 17px;
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+                button{
+                    width: 100px;
+                    height: 30px;
+                    background: $black;
+                    color: $white;
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                }
+            }
+            .value-card:hover{
+                box-shadow: -1px 4px 27px 6px rgba(34, 60, 80, 0.2);
+                border: 2px solid $green;
+            }
+            .value-card2:hover{
+                box-shadow: -1px 4px 27px 6px rgba(34, 60, 80, 0.2);
+                border: 2px solid $green;
+            }
+            .value-card3:hover{
+                box-shadow: -1px 4px 27px 6px rgba(34, 60, 80, 0.2);
+                border: 2px solid $green;
+            }
+            button:hover{
+                border:1px solid $white;
+            }
+        }
+        .value_bottom{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img/Rectangle\ 3\ \(3\).png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h3{
+                color: $white;
+                margin-bottom: 10px;
+            }
+            .little-card{
+                background: $green;
+                color: $white;
+                opacity: 70%;
+                border: dashed;
+                width: 200px;
+                height: 30px;
+                font-size: 10px;
+                text-align: center;
+
+                p{
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+// End Best Values
+
+// Footer
+    .footer-back{
+        width: 100%;
+        height: 400px;
+        background-color:#191919;
+        display: flex;
+        justify-content: space-between;
+
+        .footer{
+            display: flex;
+            justify-content: space-between;
+
+            .footer-left{
+                display: flex;
+                padding-top: 60px;
+                color: $white;
+                font-weight: 300;
+    
+                .footer-logo{
+                    width: 200px;
+                    height: 160px;
+                   
+                    img{
+                        width: 50%;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        margin: 10px 0;
+                        font-size: 12px;
+                    }
+                }
+                .useful-link{
+                    width: 120px;
+                    height: 160px;
+                    margin: 0 20px 0;
+
+                    h4{
+                        font-size: 13px;
+                    }
+                    p{
+                        margin: 12px 0;
+                        font-size: 12px;
+                    }
+                    a{
+                        color: $white;
+                        font-weight: 300;
+                    }
+                }
+                .footer-links{
+                    width: 100px;
+                    height: 80px;
+                    p{
+                        margin: 13px 0;
+                        font-size: 12px;
+                    }
+                    a{
+                        color: $white;
+                    }
+                }
+    
+            }
+            .footer-right{
+                width: 350px;
+                height: 100px;
+                padding-top: 60px;
+
+               .footer-text{
+                   color: $white;
+                   margin: 0 0 20px;
+                }
+                .right-top{
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    img{
+                        margin-right: 5px;
+                        width: 40%;
+                    }
+                }
+                .right-center{
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    .footer-inp{
+                        
+
+                        input{
+                            position: relative;
+                            width: 320px;
+                            height: 50px;
+                            outline: none;
+                            border: none;
+                            padding-left: 20px;
+                        }
+                    }
+                    
+                    .footer-button{
+                        
+                        right: 0;
+
+
+                        button{
+                            position: absolute;
+                            right: 30px;
+                            width: 100px;
+                            height: 50px;
+                            color: $white;
+                            background: $green;
+                            border: none;
+                            outline: none;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .ending-text{
+            color: $white;
+            padding-top: 150px;
+            font-size: 11px;
+        }
+    }
+
+// End Footer
+
+// Max width 1024
+
+@media screen and ( max-width: 1024px) {
+    .footer-inp{
+        input{
+            width: 310px;
+        }
+    }
+}
